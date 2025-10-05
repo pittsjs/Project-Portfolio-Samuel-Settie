@@ -1,6 +1,8 @@
 # Math 0401 - Discrete Mathematical Structures
 
-This course covers essential topics such as logic, set theory, proofs, functions, relations, and counting principles, all with an emphasis on applications to computer science. Coursework was completed using an online "Zybook", an interactive digital textbook platform designed for STEM courses. Quizzes, assignments, and exams were all completed in-person, on paper— so I no longer have access to them. 
+This course covers essential topics such as logic, set theory, proofs, functions, relations, and counting principles, all with an emphasis on applications to computer science. Coursework was completed using an online "Zybook", an interactive digital textbook platform designed for STEM courses. Quizzes, assignments, and exams were all completed in-person, on paper— so I no longer have access to my submissions of them.
+
+Completed in Fall of 2021.
 
 ## Files and their contents
 
