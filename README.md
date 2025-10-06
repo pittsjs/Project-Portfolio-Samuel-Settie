@@ -17,6 +17,7 @@ Projects in this monorepo are divided into subfolders based on the primary codin
 - [python/](python)
 
 - [Web Development/](Web%20Development)
+  - [CS 1520 — Programming Languages for Web Applications](Web%20Development/CS%201520)
 
 - [Theory and Logic/](Theory%20and%20Logic)
   - [MATH 0401 — Discrete Mathematical Structures](Theory%20and%20Logic/MATH%200401)
