@@ -1,0 +1,55 @@
+{
+  "smartphones": [
+    {
+      "brand": "Samsung Galaxy S21",
+      "price": "799.99",
+      "screenSize": "6.2 inches",
+      "pixels": "2400 x 1080",
+      "resolution": "421 PPI",
+      "storage": "128 GB",
+      "ram": "8 GB",
+      "battery": "4000 mAh",
+      "weight": "5.96 oz",
+      "id": 1
+    },
+    {
+      "brand": "iPhone 13",
+      "price": "999.99",
+      "screenSize": "6.1 inches",
+      "pixels": "2532 x 1170",
+      "resolution": "460 PPI",
+      "storage": "256 GB",
+      "ram": "4 GB",
+      "battery": "3240 mAh",
+      "weight": "6.14 oz",
+      "id": 2
+    },
+    {
+      "brand": "Google Pixel 6",
+      "price": "599.00",
+      "screenSize": "6.4 inches",
+      "pixels": "2400 x 1080",
+      "resolution": "411 PPI",
+      "storage": "128 GB",
+      "ram": "8 GB",
+      "battery": "4614 mAh",
+      "weight": "7.29 oz",
+      "id": 3
+    },
+    {
+      "brand": "OnePlus 9",
+      "price": "729.00",
+      "screenSize": "6.55 inches",
+      "pixels": "2400 x 1080",
+      "resolution": "402 PPI",
+      "storage": "128 GB",
+      "ram": "8 GB",
+      "battery": "4500 mAh",
+      "weight": "6.77 oz",
+      "id": 4
+    }
+  ],
+  "info": {
+    "Info": "to simulate an API from this db.json, type the following command in the terminal window: npx json-server --watch db.json --port 8000"
+  }
+}

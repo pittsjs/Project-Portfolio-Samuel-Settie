@@ -1,0 +1,73 @@
+/* sjs249, [CS 1520] Midterm Project CSS File */
+
+body{
+    text-decoration: none;
+}
+
+#mainTitle {
+    text-align: center;
+}
+
+/* start of left section content */
+
+#leftSection {
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+#carColorList {
+    margin-bottom: 40px;
+}
+
+/* end of left section content */
+
+/* start of right section content */
+
+#rightSection {
+    float: left;
+    width: 60%; 
+}
+
+#rightSection img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rightSection h3 {
+    text-align: center;
+}
+
+#rightSection textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+/* end of right section content */
+
+/* start of MEDIA QUERIES [RWD]*/
+
+/* phone screen */
+@media only screen and (max-width:450px){
+
+    #leftSection {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+    }
+
+    #carColorList {
+        margin-bottom: 10px;
+    }
+
+    #rightSection {
+        width: 100%;
+        float: none;
+    }
+
+}

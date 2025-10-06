@@ -1,0 +1,30 @@
+/* sjs249, lab 04 */
+
+h1 {
+    text-align: center;
+}
+
+#results {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 80%;
+}
+
+#results h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#results p {
+    line-height: 1.6;
+}
+
+#monthlyInterestRateAndPrincipalPayments,
+#monthlyPrincipalValues {
+    margin-bottom: 30px;
+}

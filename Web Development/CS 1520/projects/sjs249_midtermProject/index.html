@@ -1,0 +1,68 @@
+<!-- sjs249, [CS 1520] Midterm Project HTML File-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Car Dealer App </title>
+
+    <!-- link external css file -->
+    <link rel="stylesheet" href="/static/css/mainStyle.css">
+
+</head>
+
+<body>
+
+    <h1 id="mainTitle"> Car Dealer App </h1>
+    <hr><br>
+
+    <!-- wrap everything below inside of a form -->
+    <form action="">
+
+        <!-- left side of app -->
+        <div id="leftSection">
+
+            <h3> Car Type </h3>
+            <select name="carTypeList" id="carTypeList">
+                <option value="ferrari"> Ferrari </option>
+                <option value="lamborghini"> Lamborghini </option>
+                <option value="mustang"> Mustang </option>
+            </select>
+
+            <h3> Car Color </h3>
+            <select name="carColorList" id="carColorList">
+                <option value="red"> Red </option>
+                <option value="white"> White </option>
+                <option value="yellow"> Yellow </option>
+            </select>
+
+            <h3> Insurance Plan </h3>
+            <input type="radio" id="noInsurance" name="insurancePlan" value="noInsurance">
+            <label for="noInsurance"> No Insurance </label>
+            <br>
+
+            <input type="radio" id="3yearInsurance" name="insurancePlan" value="3yearInsurance" checked>
+            <label for="3yearInsurance"> Three Year Insurance</label>
+
+        </div>
+
+        <!-- right side of app -->
+        <div id="rightSection">
+            <img src="images/mustang-white.jpg" alt="">
+
+            <h3> Description </h3>
+
+            <textarea name="Description" rows="10" cols="60">Car: Ford Mustang &#10&#10Description: The 2006 Ford Mustang is a classic American muscle car that combines iconic design with powerful performance. Fast, aggressive, and timeless, this car features retro-inspired styling that will turn heads wherever you go. Equipped with a powerful V6 or optional V8 engine, the Mustang delivers a thrilling ride for all car enthusiasts.&#10&#10Selected color: White&#10&#10Basic Price: $25,000
+            </textarea>
+
+        </div>
+
+    </form>
+
+    <script src="static/js/mainScript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphones API</title>
+    <script src="http_requests.js"></script>
+</head>
+
+<body>
+    <h2 id="title">Smartphones API</h2>
+
+    <fieldset>
+        <legend>View All Smartphones</legend>
+        <button type="button" id="viewAllSmartphonesButton">View all Smartphone entries</button>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>View details of a single Smartphone</legend>
+        <button type="button" id="viewSmartphoneButton">View Smartphone</button>
+        <input type="text" id="smartphoneIdTextInput" placeholder="Enter Smartphone ID number...">
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Add a new Smartphone</legend>
+        <button type="button" id="addSmartphoneButton">Add new Smartphone</button>
+        <ul>
+            <li><input type="text" id="addSmartphoneBrand" placeholder="Enter Brand..."></li>
+            <li><input type="text" id="addSmartphonePrice" placeholder="Enter Price..."></li>
+            <li><input type="text" id="addSmartphoneScreenSize" placeholder="Enter Screen Size..."></li>
+            <li><input type="text" id="addSmartphonePixels" placeholder="Enter Pixels..."></li>
+            <li><input type="text" id="addSmartphoneResolution" placeholder="Enter Screen Resolution..."></li>
+            <li><input type="text" id="addSmartphoneStorage" placeholder="Enter Storage..."></li>
+            <li><input type="text" id="addSmartphoneRam" placeholder="Enter RAM Size..."></li>
+            <li><input type="text" id="addSmartphoneBattery" placeholder="Enter Battery Capacity..."></li>
+            <li><input type="text" id="addSmartphoneWeight" placeholder="Enter Weight..."></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Update an existing Smartphone</legend>
+        <button type="button" id="updateSmartphoneButton">Update Smartphone</button>
+        <ul>
+            <li><input type="text" id="updateSmartphoneId" placeholder="Enter Smartphone ID..."></li>
+            <li><input type="text" id="updateSmartphoneBrand" placeholder="Enter Brand..."></li>
+            <li><input type="text" id="updateSmartphonePrice" placeholder="Enter Price..."></li>
+            <li><input type="text" id="updateSmartphoneScreenSize" placeholder="Enter Screen Size..."></li>
+            <li><input type="text" id="updateSmartphonePixels" placeholder="Enter Pixels..."></li>
+            <li><input type="text" id="updateSmartphoneResolution" placeholder="Enter Screen Resolution..."></li>
+            <li><input type="text" id="updateSmartphoneStorage" placeholder="Enter Storage..."></li>
+            <li><input type="text" id="updateSmartphoneRam" placeholder="Enter RAM Size..."></li>
+            <li><input type="text" id="updateSmartphoneBattery" placeholder="Enter Battery Capacity..."></li>
+            <li><input type="text" id="updateSmartphoneWeight" placeholder="Enter Weight..."></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Deleting an existing Smartphone</legend>
+        <button type="button" id="deleteSmartphoneButton">Delete Smartphone</button>
+        <input type="text" id="deleteSmartphoneId" placeholder="Enter Smartphone Number...">
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Response Display</legend>
+        <div id="responseDisplay"></div>
+    </fieldset>
+
+</body>
+
+</html>

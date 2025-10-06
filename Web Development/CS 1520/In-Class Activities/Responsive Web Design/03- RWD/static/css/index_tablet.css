@@ -1,0 +1,89 @@
+body {
+    min-width: 820px;
+    background-color: lightgreen;
+}
+
+/* top area */
+#top_navigation_bar img{
+    float: left;
+}
+
+#top_navigation_bar input {
+    float: left;
+    margin: 3px 5px 0px 200px;
+    font-size: 20px;
+}
+
+#farRight_topNavBar {
+    clear: both;
+    padding: 20px;
+}
+
+#farRight_topNavBar h3 {
+    float: left;
+    margin: 7px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1st horitzontal navigation bar */
+#firstHorNavBar {
+    clear: both;
+    margin: 20px;
+    list-style-type: none;
+}
+
+#firstHorNavBar li {
+    float: left;
+    margin: 0px 20px;
+}
+
+/* 2nd horitzontal navigation bar */
+#secondHorNavBar {
+    clear: both;
+    list-style-type: none;
+    padding: 20px;
+}
+
+#secondHorNavBar li {
+    float: left;
+    margin: 0px 10px;
+}
+
+/* main area */
+
+#mainArea {
+    clear: both;
+    padding: 30px;
+    list-style-type: none;
+}
+
+#mainArea li {
+    float: left;
+    width: 40%;
+    margin: 20px;
+}
+
+#mainArea img {
+    width: 100%;
+}
+
+#mainArea span {
+    vertical-align: super;
+    font-size: 0.5em;
+}
+
+#mainArea input {
+    background-color: yellow;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+}
+
+#mainArea h3, #mainArea h2, #mainArea p {
+    margin: 5px;
+} 

@@ -1,0 +1,37 @@
+<!-- sjs249, lab04 -->
+
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/main_style.css"> 
+    <!-- defining all the JavaScript functions used in this project -->
+    <script type="text/javascript" src="./static/js/main_javascript.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <h1>Mortgage Calculator</h1>
+
+    <!-- interest vs principal plot -->
+    <div id="monthlyInterestRateAndPrincipalPayments" style="width:80%; margin:auto;"></div>
+
+    <!-- Plot for Remaining Principal -->
+    <div id="monthlyPrincipalValues" style="width:80%; margin:auto;"></div>
+
+    <!-- Results Display -->
+    <div id="results" style="width:80%; margin:auto; padding:20px;">
+        <h3>Mortgage Details</h3>
+        <p id="mortgage-details"></p>
+    </div>
+
+    <script type="text/javascript">
+        main_driver();
+    </script>
+</body>
+
+</html>
