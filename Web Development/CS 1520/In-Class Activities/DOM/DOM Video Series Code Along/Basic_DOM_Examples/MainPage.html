@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+    <link rel="stylesheet" href="/Basic_DOM_Examples/static/css/main_page_styles.css">
+    <script type="text/javascript" src="/Basic_DOM_Examples/static/js/javascript.js"></script>
+</head>
+
+<body>
+    <h1 id="page_title">This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <p>
+        This page has been created in VS Code <br>
+        This new line
+        This is the third line
+    </p>
+
+    <div id="new_element"></div>
+
+    <img src="https://www.amazon.com">
+    <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/article/d6pF68p5FzJH18HYG7HFdp5j27MK54.jpg"
+        alt="Gorillaz Image" width="400" height="200">
+        <a href=" https://www.amazon.com"><img
+        src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/article/d6pF68p5FzJH18HYG7HFdp5j27MK54.jpg"
+        alt="" width="400" height="200"></a>
+
+    <h3 class="list">Things to buy in the Whole Foods</h3>
+    <ul id="things_to_buy">
+        <li>eggs</li>
+        <li id="pasta_id">pasta</li>
+        <li>tomatos</li>
+    </ul>
+
+    <h3 class="list">Steps to fix a bug in your code</h3>
+    <ol>
+        <li>Reproduce the error</li>
+        <li>Open the source code and identify the broken function</li>
+        <li>Propose solution for the bug</li>
+        <li>Implement solution</li>
+        <li>Test the new code</li>
+        <li>Release code for production</li>
+    </ol>
+
+    <h3 class="title_navigation_bar">Navigation Bar #1</h3>
+    <ul class="ul_navigation_bar">
+        <li><a href="https//www.google.com" target="_blank" rel="noopener noreferrer">Home</a></li>
+        <li>About</li>
+        <li>Contact Us</li>
+    </ul>
+
+    <h3 class="title_navigation_bar">Navigation Bar #2</h3>
+    <ul class="ul_navigation_bar">
+        <li><a href=" https://www.netflix.com/" target="_blank" rel="noopener noreferrer"><img src="/Basic_DOM_Examples/images/house.png"
+            alt=""></a></li>
+        <li><img src="/Basic_DOM_Examples/images/info.png" alt=""></li>
+        <li><img src="/Basic_DOM_Examples/images/team.png" alt=""></li>
+    </ul>
+    <br>
+    <a id="youtube_link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">youtube</a>
+    <br><br>
+    <!-- tables -->
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+    <br><br>
+    <!-- HTML forms -->
+    <form>
+        <label for="username"> Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password"> Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <label for="email"> email:</label>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <input type="button" id="button_id" value="Submit">
+    </form>
+
+    <form action="">
+        <h4>Veteran Status</h4>
+        <input type="radio" id="veteran" name="veteran_group" value="Veteran">
+        <label for="veteran"> Veteran </label><br>
+        <input type="radio" id="non-veteran" name="veteran_group" value="Non-Veteran">
+        <label for="non-veteran"> Non-Veteran </label><br>
+
+        <h4>Marital Status</h4>
+        <input type="radio" id="married" name="marital_status_group" value="Married">
+        <label for="married"> Married </label><br>
+        <input type="radio" id="single" name="marital_status_group" value="Single">
+        <label for="single"> Single </label><br>
+        <input type="radio" id="window" name="marital_status_group" value="Window">
+        <label for="widow"> Widow </label><br>
+
+        <h4>Pick the fruits you like most</h4>
+        <input class="fruits" type="checkbox" checked id="banana" name="banana" value="banana">
+        <label for="banana"> Bananas </label><br>
+        <input class="fruits" type="checkbox" id="apple" name="apple" value="apple">
+        <label for="apple"> Apples</label><br>
+        <input class="fruits" type="checkbox" checked id="watermelon" name="watermelon" value="watermelon">
+        <label for="watermelon"> Watermelons</label><br><br><br>
+
+        <!-- dropdown list -->
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <input type="submit" value="Submit"><br><br>
+
+        <!-- div -->
+        <div class="pitt_links">
+            <a href="about.html" id="pitt_links_id">
+                <img src="/Basic_DOM_Examples/images/house.png" alt="">
+                <div class="pitt_links_inner_div">
+                    <h4>Pitt Email</h4>
+                    <p>Outlook (all campuses)</p>
+                </div>
+            </a>
+        </div>
+        <br><br>
+        <p style="clear:both;">hello</p>
+    </form>
+
+    
+</body>
+
+</html>

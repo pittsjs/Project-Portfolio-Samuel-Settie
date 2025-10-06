@@ -6,7 +6,7 @@ CS 0411 must be taken in tandem with the lab course, CS 0410. The lab is where h
 
 Completed in Spring Term 2021-2022 at the University of Pittsburgh, Johnstown campus.
 
-## Files and their contents
+## Directory
 
 [Excercies/](Excercies) – Problem sets completed during lectures  
   &nbsp;&nbsp;– [CS0411_Excercies1.pdf](Excercies/CS0411_Excercies1.pdf)  
@@ -16,7 +16,7 @@ Completed in Spring Term 2021-2022 at the University of Pittsburgh, Johnstown ca
   &nbsp;&nbsp;– [CS0411_Excercies5.pdf](Excercies/CS0411_Excercies5.pdf)  
   &nbsp;&nbsp;– [CS0411_Excercies6.pdf](Excercies/CS0411_Excercies6.pdf)  
 
-[Lab (CS 0410) / Assignments/](Lab%20%28CS%200410%29%20%2F%20Assignments) – Coding assignments for the lab course (see CS0410 README for assignment summaries)  
+[Lab (CS 0410) / Assignments/](Lab%20%28CS%200410%29%20%2F%20Assignments) – Coding assignments for the lab course component  
   &nbsp;&nbsp;– Assignment 1  
   &nbsp;&nbsp;– Assignment 2  
   &nbsp;&nbsp;– Assignment 3  

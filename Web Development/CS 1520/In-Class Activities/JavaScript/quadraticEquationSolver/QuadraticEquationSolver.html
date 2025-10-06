@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"> </script>
+
+    <!-- function definitions -->
+    <script type="text/javascript">
+        // functions defined here
+        function getQuadraticCoefficients() {
+            let userInput = prompt("Enter coefficients separated by commas", "2, 5, -3");
+            // "2, 5, -3" one single string
+
+            let coefArrayInStringFormat = userInput.split(",");
+            // ["2", "5", "-3"]
+
+            let coefArrayInNumberFormat = [];
+            for (let i = 0; i < coefArrayInStringFormat.length; i++) {
+                coefArrayInNumberFormat.push(parseFloat(coefArrayInStringFormat[i]));
+            }
+            return coefArrayInNumberFormat;
+        }
+
+        function computeDiscriminant(coeffs) {
+            // b^2 - 4ac
+            let disc = coeffs[1] * coeffs[1] - 4 * coeffs[0] * coeffs[2];
+            return disc;
+        }
+
+        function computeRoots(coeffs, disc) {
+            let roots = [];
+            // (-b - sqrt(disc))/(2a) and (-b + sqrt(disc))/(2a)
+            if (disc < 0) {
+                // do nothing  // empty roots - no real solutions
+            } else if (disc == 0) {
+                // one single root -b / (2a)
+                roots.push(-coeffs[1] / (2 * coeffs[0]));
+            } else {
+                // 2 real roots
+                let root1 = (-coeffs[1] - Math.sqrt(disc)) / (2 * coeffs[0]);
+                let root2 = (-coeffs[1] + Math.sqrt(disc)) / (2 * coeffs[0]);
+                roots.push(root1);
+                roots.push(root2);
+            }
+            return roots;
+        }
+
+        function displayResults(roots, coeffs) {
+            let equation = `<h2>The quadratic equation ${coeffs[0]}x^2 + ${coeffs[1]}x + ${coeffs[2]} = 0 </h2>`;
+            document.write(equation);
+
+            let arraySize = roots.length;
+            if (arraySize == 0) {
+                document.write("has no real roots");
+                console.log("no real roots");
+            } else if (arraySize == 1) {
+                document.write(`<h2>has one single root: ${roots[0]}</h2>`);
+                console.log("one single root");
+            } else {
+                document.write(`<h2>has two real roots: ${roots[0]} and ${roots[1]}</h2>`);
+                console.log("two real roots");
+            }
+        }
+
+        function plotQuadraticEquation(xArray, yArray) {
+            // Define Data
+            const data = [{
+                x: xArray,
+                y: yArray,
+                mode: "markers"
+            }];
+
+            // Define Layout
+            const layout = {
+                xaxis: { title: "x-axis" },
+                yaxis: { title: "y-axis" },
+                title: "Quadratic equation"
+            };
+
+            // Display using Plotly
+            Plotly.newPlot("myPlot", data, layout);
+        }
+
+        const y = function (a, b, c, x) {
+            return a * x * x + b * x + c;
+        }
+
+        function createArraysForPlotting(coefficients) {
+            let a = coefficients[0];
+            let b = coefficients[1];
+            let c = coefficients[2];
+
+            let minAndMaxXValues = computeMinXAndMaxX(coefficients);
+            let xMin = minAndMaxXValues[0];
+            let xMax = minAndMaxXValues[1];
+
+            let deltaX = (xMax - xMin) / 30;  // 30 is the total number of points in this plot
+            let xArray = [];
+            let yArray = [];
+
+            for (let x = xMin; x <= xMax; x += deltaX) {
+                xArray.push(x);
+                yArray.push(y(a, b, c, x));
+            }
+
+            return [xArray, yArray];
+        }
+
+        // vertical line of symmetry 
+        const computeMinXAndMaxX = (coefficients) => {
+            let a = coefficients[0];
+            let b = coefficients[1];
+            let c = coefficients[2];
+
+            // x point of symmetry
+            let xPointOfSymmetry = -b / (2 * a);
+            let maxY;
+            if (a < 0) {
+                maxY = -Math.abs(y(a, b, c, xPointOfSymmetry)) * 10;
+            } else {
+                maxY = Math.abs(y(a, b, c, xPointOfSymmetry)) * 10;
+            }
+
+            let deltaX = 1;
+            let condition1 = true;
+            let numberOfBackAndForth = 0;
+            const maxNumberOfBackAndForth = 3;
+            let currentX = xPointOfSymmetry;
+
+            while (condition1) {
+                currentX += deltaX;
+                if (a > 0 && y(a, b, c, currentX) > maxY) {
+                    deltaX /= -10;
+                    numberOfBackAndForth++;
+                    if (numberOfBackAndForth > maxNumberOfBackAndForth) {
+                        condition1 = false;
+                    }
+                } else if (a < 0 && y(a, b, c, currentX) < maxY) {
+                    deltaX /= -10;
+                    numberOfBackAndForth++;
+                    if (numberOfBackAndForth > maxNumberOfBackAndForth) {
+                        condition1 = false;
+                    }
+                }
+            }
+
+            // computing minX and maxX based on the point of symmetry and the currentX value
+            // with some margins
+            const minX = xPointOfSymmetry - (currentX - xPointOfSymmetry);
+            const maxX = currentX;
+            return [minX, maxX];
+        }
+
+
+        // main driver function: it will call the other functions step-by-step
+        function main() {
+            // getting the quadratic coefficients
+            let coefficients = getQuadraticCoefficients();
+            console.log("coefficients: " + coefficients);
+
+            // compute the discriminant
+            let disc = computeDiscriminant(coefficients);
+            console.log("discriminant: " + disc);
+
+            // compute the roots
+            let roots = computeRoots(coefficients, disc);
+            console.log("roots: " + roots);
+
+            // display results
+            // try 2, 5, -3 and 1, 2, 1
+            // display results
+            displayResults(roots, coefficients);
+
+            // create arrays for plotting
+            let plotArrays = createArraysForPlotting(coefficients);
+
+            // plotting curve
+            let xArray = plotArrays[0];
+            let yArray = plotArrays[1];
+            plotQuadraticEquation(xArray, yArray);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <div id="myPlot" style="width: 100%; max-width: 700px;"></div>
+
+    <!-- function calls -->
+    <script type="text/javascript">
+        main();
+    </script>
+
+    
+
+</body>
+
+</html>

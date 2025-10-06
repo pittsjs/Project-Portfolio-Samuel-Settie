@@ -1,0 +1,182 @@
+Code inserts for JavaScript Arrays Lecture
+
+1. create a new html file: JavaScript_Arrays.html
+
+2. In the <head> add the following code:
+
+    <title>JS Arrays</title>
+    <script type="text/javascript">
+        // function definitions here
+
+        // main driver that will call the other functions
+        function main() {
+            
+        }
+    </script>
+
+3. In the <body> add:
+
+    <script type="text/javascript">
+        main();
+    </script>
+    <h1>Check the JS console</h1>
+
+4. Start defining functions in the <head>:
+
+    function block1() {
+        console.log("block #1:");
+        // creating an array
+        // a) Using new Array
+        let a1 = new Array("here", "is", "an", "array", "of", "string", "data");
+        let a2 = new Array(25);
+        let a3 = new Array("10");
+        console.log(a1);
+        console.log(a2);
+        console.log(a3);
+        console.log(`a1[2]: ${a1[2]}`);
+        console.log(`a2[5]: ${a2[5]}`);
+    }
+
+5. Call block1() function from the main driver
+    function main() {
+        block1();
+    }
+
+6. Run code and check console for results
+
+7. copy this code into the <head>
+
+    function block2() {
+        console.log("block #2:");
+        // creating an array
+        // b) Using []
+        let a5 = [1, 2, 3, "Brenno", "Thamy"];
+        console.log(a5);
+    }
+
+8. Call block2() function from the main driver
+    function main() {
+        block1();
+        block2();
+    }
+
+9. Run code and check console for results
+
+10. Repeat the above steps with the following function:
+
+    function block3() {
+        console.log("block #3:");
+        let a6 = [];
+        a6.push("Paulo");
+        a6.push("Brasko");
+        a6.push("Ferreira");
+        console.log(a6);
+     }
+
+11. Repeat the above steps with the following function:
+
+    function block4() {
+        console.log("block #4:");
+        // Be careful to not mix up "new Array" with push()
+        let a7 = new Array(10);
+        a7.push(0.5);
+        a7[2] = 0.7;
+        console.log(a7);
+        // what is the advantage of using "new Array" versus "[]"?
+     }
+
+
+12. Repeat the above steps with the following function:
+
+    // see very important notes after the function definition!
+    function block5() {
+        console.log("block #5:");
+        // Looping over an array
+        // method #1:
+        console.log("Looping over an array - method #1");
+        for (let i = 0; i < a1.length; i++) {
+            console.log(a1[i]);
+        }
+
+        // method #2:
+        console.log("Looping over an array - method #2");
+        for (let item of a1) {
+            console.log(item);
+        }
+
+        // method #3:
+        console.log("Looping over an array - method #3");
+        a1.map(item => console.log(item));
+
+        // method #4:
+        console.log("Dsiplaying the contents of an array - method #4");
+        console.log(a1.join(", "));
+    }
+
+    // create a global variable a1. The following statement shall be 
+    // place outside any function
+    var a1;
+
+    // in block1() function replace let a1 = ... with just a1 = ...
+
+    // uncomment // block1() in the main driver, so it runs and creates a1 array
+
+13. Repeat the above steps with the following function:
+
+    function block6() {
+        console.log("block #6:");
+        // creating 2D arrays
+        // first step: create an regular array
+        let a8 = new Array(3); // three items: e.g., three rows
+        // second step: creating the sub-arrays 
+        let a9 = [5, 6, 7, 8, 9];
+        let a10 = [8, 9, 10, 11, 12];
+        let a11 = [13, 14, 15, 16, 17];
+        // third step: adding each sub-array into the regular array
+        a8[0] = a9;
+        a8[1] = a10;
+        a8[2] = a11;
+        console.log(a8);
+
+        // another way of creating an array could be
+        a12 = [[1, 2], [3, 4], [5, 6], [7, 8]];
+        console.log(a12);
+    }
+
+
+14. Repeat the above steps with the following function:
+
+    function block7() {
+        console.log("block #7:");
+        // looping over a 2D array
+        console.log("Looping over a 2D array");
+        for (let row = 0; row < a8.length; row++) {
+            for (let col = 0; col < a8[row].length; col++) {
+                console.log(a8[row][col]);
+            }
+        }
+
+        // another way of looping over a 2D array could be
+        console.log("Looping over a 2D array - second way");
+        for (let rowData of a8) {
+            for (let colData of rowData) {
+                console.log(colData);
+            }
+        }
+
+        // another way yet...
+        console.log("third way...")
+        console.log(a8.join(", "));
+    }
+
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        main();
+    </script>
+    <h1>Check the JS console</h1>
+</body>
+
+</html>

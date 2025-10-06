@@ -1,0 +1,66 @@
+#pageTitle {
+    text-align: center;
+    color: blue;
+    margin: 50px;
+}
+
+h2, h3, h4 {
+    color: red;
+}
+
+.list {
+    color: darkgreen;
+}
+
+#thingsToBuy {
+    list-style-image: url(/images/paw.png);
+}
+
+h3.titleNavigationBar{
+    clear:both;
+    float: left;
+}
+
+.ul_navigation_bar {
+    list-style-type: none;
+    float: right;
+    margin: 0px;
+}
+
+ul.ul_navigation_bar li {
+    margin: 20px; 
+    float: left;
+}
+
+table, th, td{
+    border:1px solid black;
+    padding: 5px;
+}
+
+th {
+    color: blue;
+}
+
+.pitt_links {
+    float: left;
+    background-color: aqua;
+    width: 280px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+div.pitt_links img {
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.pitt_links_inner_div {
+    float: left;
+    margin: 5px 0px 0px 10px;
+}
+
+div.pitt_links_inner_div h4, div.pitt_links_inner_div p{
+    margin: 0px 5px;
+}

@@ -1,0 +1,211 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./static/css/mainStyle.css">
+        <script type="text/javascript" src="./static/js/javascript.js"></script>
+    </head>
+
+    <body>
+        <!-- part 1/2 : Headings and Paragraphs  -->
+        <h1 id="pageTitle">This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+
+        <p>
+            Paragraph text <br>
+            Erm What the Sigma
+        </p>
+
+        <div id="new_element"></div>
+
+        <br><br>
+        <!-- part 3: Images and Links -->
+
+        <img src="https://i.ytimg.com/vi/g_JH7i18Sns/mqdefault.jpg" alt="" width="100" height="100">
+
+        <a href="https://www.youtube.com"><img src="https://i.ytimg.com/vi/g_JH7i18Sns/mqdefault.jpg" alt=""></a>
+
+        <br><br>
+        <!-- part 4: ordered and unordered lists -->
+
+        <h3 class="list"> Things to buy in the Whole Foods</h3>
+        <ul id="things_to_buy">
+            <li>eggs</li>
+            <li id="pasta_id">pasta</li>
+            <li>eggs</li>
+        </ul>
+
+        <h3 class="list"> Things to buy in the Whole Foods</h3>
+        <ol>
+            <li>eggs</li>
+            <li>pasta</li>
+            <li>eggs</li>
+        </ol>
+
+        <br><br>
+        <!-- part 5: navigation bar with unordered lists   -->
+
+        <h3 class="titleNavigationBar">Navigation Bar #1</h3>
+        <ul class="ul_navigation_bar">
+            <li> <a href="https://www.youtube.com"> YouTube</a> </li>
+            <li> Home</li>
+            <li>Contact Us</li>
+        </ul>
+
+        <br><br>
+        <!-- part 6: navigation bar with icons  -->
+
+        <h3 class="titleNavigationBar">Navigation Bar #2</h3>
+        <ul class="ul_navigation_bar">
+            <li> <a href="https://www.youtube.com"><img src="images/Main_area/image_01.png" alt="image1"></a></li>
+            <li><img src="images/Main_area/image_02.png" alt="image2"></li>
+            <li><img src="images/Main_area/image_03.png" alt="image3"></li>
+        </ul>
+
+        <br><br>
+
+        <!-- part 7: Tables  -->
+
+        <table style="clear: both;">
+            <!-- row1, headings-->
+            <tr>
+                <th> Company </th>
+                <th> Contact </th>
+                <th> Country </th>
+            </tr>
+            
+            <!-- row2, data -->
+            <tr>
+                <td> Alfreds Futterkiste </td>
+                <td> Maria Anders </td>
+                <td> Germany </td>
+            </tr>
+
+            <!-- row3, data -->
+            <tr>
+                <td> Centro Comercial Moctezuma</td>
+                <td> Francisco Chang</td>
+                <td> Mexico </td>
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <!-- part 8: Forms and Text Inputs  -->
+
+        <form action="">
+            <h4>Fill this form</h4>
+            <label for="username">Username: </label>
+            <input id="username" name = "username" type="text">
+            <br>
+
+            <label for="password">Password: </label>
+            <input id="password" type="password" name = "password">
+            <br>
+
+            <label for="email">Email: </label>
+            <input id="email" type="email" name = "email">
+            <br>
+
+            <input type="submit">
+        </form>
+
+        <br><br>
+
+        <!-- part 9 more forms + radio buttons -->
+
+        <form action="">
+            <h4>Veteran Status</h4>
+
+            <input type="radio" id="veteran" name="veteran_group" value="Veteran">
+            <label for="veteran">Veteran</label>
+            <br>
+
+            <input type="radio" id="non-veteran" name="veteran_group" value="Non-Veteran">
+            <label for="non-veteran">Non-Verteran</label>
+            <br><br>
+
+            <h4>Marital Status</h4>
+
+            <input type="radio" id="married" name="marital_group" value="Married">
+            <label for="married">Married</label>
+            <br>
+
+            <input type="radio" id="Single" name="marital_group" value="Single">
+            <label for="single">Single</label>
+            <br>
+
+            <input type="radio" id="widow" name="marital_group" value="Widow">
+            <label for="widow">Widow</label>
+            <br><br>
+
+            <input type="submit">
+        
+
+            <br><br>
+
+            <!-- part 10: Forms and Checkboxes -->
+
+            <h3>Select the fruits that you like the most</h3>
+
+            <input class="fruits" type="checkbox" id="banana" name="banana" value="banana">
+            <label for="banana"> Banana </label>
+            <br>
+
+            <input class="fruits" type="checkbox" id="apple" name="apple" value="apple">
+            <label for="apple"> Apple </label>
+            <br>
+
+
+            <input class="fruits" type="checkbox" id="watermelon" name="watermelon" value="watermelon">
+            <label for="watermelon"> Watermelon </label>    
+
+            <br><br>
+
+            <!-- part 11: Forms and Dropdown Lists -->
+
+            <h3>Choose a car:</h3>
+            <select name="cars" id="cars">
+
+                <option value="volvo"> Volvo </option>
+                <option value="saab"> Saab </option>
+                <option value="bmw"> BMW </option>
+                <option value="audi"> Audi </option>
+
+            </select>
+
+            <br><br>
+            <input type="submit">
+
+        </form>
+        <br><br>
+
+        <!-- part 12: DIV tags -->
+
+        <div class="pitt_links">
+            <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-jpg-file-document-icon-png-image_897364.jpg" alt="">
+            <div class="pitt_links_inner_div">
+                <h4 > Pitt Email</h4>
+                <p > Outlook (all campuses)</p>
+            </div>
+        </div>
+
+        <div class="pitt_links">
+            <img src="./images/paw.png" alt="">
+            <div class="pitt_links_inner_div">
+                <h4 > Pitt Paws</h4>
+                <p > Help Desk (all campuses)</p>
+            </div>
+        </div>
+
+        <script>
+            main_driver();
+        </script>
+
+    </body>
+
+</html>

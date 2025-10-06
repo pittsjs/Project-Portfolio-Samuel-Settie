@@ -1,0 +1,101 @@
+body {
+    min-width: 1060px;
+}
+
+#top_navigation_bar {
+    background-color: rgb(12, 47, 87); 
+    height: 50px;
+}
+
+/* top area */
+#top_navigation_bar img{
+    float: left;
+    margin: 5px;
+}
+
+#top_navigation_bar input {
+    float: left;
+    margin: 6.5px 0px 0px 200px;
+    font-size: 20px;
+}
+
+#farRight_topNavBar {
+    float: right;
+    margin: 0px 25px;
+}
+
+#farRight_topNavBar h3 {
+    float: left;
+    margin: 11px 10px;
+}
+
+#farRight_topNavBar img {
+    float: left; 
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1st horitzontal navigation bar */
+#firstHorNavBar {
+    clear: both;
+    margin: 20px;
+    list-style-type: none;
+}
+
+#firstHorNavBar li {
+    float: left;
+    margin: 0px 20px;
+}
+
+/* 2nd horitzontal navigation bar */
+#secondHorNavBar {
+    clear: both;
+    list-style-type: none;
+    padding: 20px;
+}
+
+#secondHorNavBar li {
+    float: left;
+    margin: 10px;
+}
+
+/* main area */
+
+#mainArea {
+    clear: both;
+}
+
+#mainArea {
+    clear: both;
+    list-style-type: none;
+}
+
+#mainArea li {
+    float: left;
+    width: 26%;
+    margin: 20px;
+}
+
+#mainArea img {
+    width: 100%;
+}
+
+#mainArea span {
+    vertical-align: super;
+    font-size: 0.5em;
+}
+
+#mainArea input {
+    background-color: yellow;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+}
+
+#mainArea h3, #mainArea h2, #mainArea p {
+    margin: 5px;
+} 

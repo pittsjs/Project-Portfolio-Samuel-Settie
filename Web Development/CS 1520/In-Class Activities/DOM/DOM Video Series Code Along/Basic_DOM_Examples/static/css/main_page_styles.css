@@ -1,0 +1,71 @@
+#page_title {
+    text-align:center;
+    color:blue;
+    margin: 50px;
+}
+
+h2, h3, h4 {
+    color: red;
+}
+
+.list {
+    color: darkgreen;
+}
+
+ul#things_to_buy {
+    list-style-image: url("/images/pawprint.png");
+  }
+
+h3.title_navigation_bar {
+    clear:both;
+    float:left;
+}
+
+.ul_navigation_bar {
+    list-style-type: none;
+    float:right;
+    margin: 0px;
+}
+
+ul.ul_navigation_bar li {
+    margin: 20px; 
+    float: left;
+}
+
+ul.ul_navigation_bar img {
+    width: 48px;
+    height: 48px;
+}
+
+#youtube_link {
+    clear:both;
+    display:block;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.pitt_links {
+    border: 1px solid black;
+    float:left;
+    background-color:aqua;
+    width:280px;
+    padding: 5px;
+}
+
+div.pitt_links img {
+    width: 64px;
+    height: 64px;
+    float:left;
+}
+
+div.pitt_links_inner_div {
+    float:left; 
+    margin: 5px 0px 0px 10px;
+}
+
+div.pitt_links_inner_div h4, div.pitt_links_inner_div p {
+    margin: 0px 5px;
+}

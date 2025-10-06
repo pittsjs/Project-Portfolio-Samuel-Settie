@@ -1,0 +1,210 @@
+JavaScript Objects Code Inserts:
+
+1. In VS Code, create a new file JavaScript_Objects.html
+
+2. Create a html skeleton (using doc + ENTER)
+
+3. Add the following code in the <head> section
+
+    <script type="text/javascript">
+
+        // adding some global variables later used by multiple functions
+        var my_tv;
+        var tv_size;
+        var tv_inputs;
+
+        // function definitions are below
+
+        // the main driver function that will can the functions defined above 
+        function main() {
+
+        }
+    </script>
+
+4. Add the following code in the <body> section
+
+    <script type="text/javascript">
+        main();
+    </script>
+
+4. Creating the first function. Add the following code in the <head> before the main()
+
+    function block1() {
+        console.log("Block #1:")
+        // creating an object in JavaScript
+        console.log("one way of creating a JavaScript Object");
+        let myObject1 = {};
+        myObject1["key1"] = "value1";
+        myObject1["key2"] = "value2";
+        console.log(myObject1);
+
+        console.log("another way of creating a JavaScript Object");
+        let myObject2 = {
+            "key3": "value3",
+            "key4": "value4"
+        }
+        console.log(myObject2);
+
+        console.log("creating a cell phone object");
+        let cell_phone = {};
+        cell_phone["price"] = 500.00;
+        cell_phone["brand"] = "Samsung";
+        console.log(cell_phone);
+
+        console.log("creating an array of objects");
+        // array of objects
+        const objectArray = [
+            { name: "Paulo", age: 26 },
+            { name: "Maria", age: 21 }
+        ];
+        console.log(objectArray);
+    }
+
+5. Call this function from the main()
+
+    function main() {
+        block1();
+    }
+
+6. Run this project, open the console, and check printout values
+
+7. Repeat steps 4, 5 and 6 for the function below:
+
+    function block2() {
+        console.log("block #2");
+        // creating new TV objects by using the function TV
+        my_tv = new TV("Samsung", 46, 599.00, 5, 2);
+        your_tv = new TV("Sharp", 60, 399.00, 8, 1);
+        her_tv = new TV("Sharp", 50, 450.00, 8, 1);
+
+        // printing one object using the internet browser capabilities
+        console.log(your_tv);
+        // printing one object using the customized print function method
+        your_tv.display();
+    }
+
+    function TV(brand, size, price, injacks, outjacks) {
+        // object fields
+        this.brand = brand;
+        this.size = size;
+        this.price = price;
+        this.jacks = new Object();  // a field can also be an object
+        this.jacks.input = injacks;
+        this.jacks.output = outjacks;
+        this.display = show_properties;  // assigning a function to the display field
+    }
+
+    function show_properties() {
+        console.log("This is the TV:");
+        console.log(`Brand: ${this.brand}`);
+        console.log(`Size: ${this.size}`);
+        console.log(`Price: ${this.price}`);
+        console.log("Input Jacks:");
+        console.log(`${this.jacks.input}`);
+        console.log("Output Jacks:");
+        console.log(`${this.jacks.output}`);
+        console.log("\n");
+    }
+
+8. Repeat steps 4, 5 and 6 for the function below:
+
+    function block3() {
+        console.log("block #3");
+        // retrieving an object feature
+        let tv_size = my_tv.size;
+        let tv_inputs = my_tv.jacks.input;
+        console.log(`TV Screen Size: ${tv_size} and number of inputs: ${tv_inputs}`);
+
+        // setting an object feature value
+        my_tv.price = 250.00;
+        my_tv["price"] = 250.00;
+        my_tv.display();
+    }
+
+9. Repeat steps 4, 5 and 6 for the function below:
+
+    function block4() {
+        console.log("block #4");
+
+        // creating array of objects
+        let tvs_in_my_house = [my_tv, your_tv, her_tv];
+
+        // looping over the array - one way
+        console.log("looping over the array - one way");
+        for (let i = 0; i < tvs_in_my_house.length; i++) {
+            console.log(tvs_in_my_house[i].display());
+        }
+
+        // looping over the array - second way
+        console.log("looping over the array - second way");
+        for (let current_tv of tvs_in_my_house) {
+            current_tv.display();
+        }
+
+        // looping ovr the array - third way
+        console.log("looping over the array - third way");
+        tvs_in_my_house.map( current_tv => console.log(current_tv.display()) );
+    }
+
+10. Repeat steps 4, 5 and 6 for the function below:
+
+    function block5() {
+        console.log("block #5");
+        let tvs_in_my_house = [my_tv, your_tv, her_tv];
+
+        // sorting array of TVs
+        // sort() function: will it sort the TVs by what? size or price?
+        // sorting by price
+        console.log("sorting by price");
+        tvs_in_my_house.sort(by_price);
+        for (let current_tv of tvs_in_my_house) {
+            current_tv.display();
+        }
+
+        // sorting by size
+        console.log("sorting by size");
+        tvs_in_my_house.sort(by_size);
+        for (let current_tv of tvs_in_my_house) {
+            current_tv.display();
+        }
+    }
+
+    function by_size(tv1, tv2) {
+        return tv1.size - tv2.size;
+    }
+
+    function by_price(tv1, tv2) {
+        return tv1.price - tv2.price;
+    }
+
+11. Repeat steps 4, 5 and 6 for the function below:
+
+    function block6() {
+        console.log("block #6");
+        // creating objects from JavaScript Classes
+        let person01 = new Person("Joanna", 21);
+        let person02 = new Person("Robert", 19);
+        let person03 = new Person("Briana", 20);
+
+        // creating an array of People
+        let people = [person01, person02, person03];
+        for (let currentPerson of people) {
+            currentPerson.display();
+        }
+    }
+
+    // defining a new class named Person
+    class Person {
+        // class constructor and its fields name and age
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        // class method
+        display() {
+            console.log("Name: " + this.name);
+            console.log("Age: " + this.age + "\n");
+        }
+    }
+

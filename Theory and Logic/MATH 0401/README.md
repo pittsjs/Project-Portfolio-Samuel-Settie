@@ -2,9 +2,9 @@
 
 This course covers essential topics such as logic, set theory, proofs, functions, relations, and counting principles, all with an emphasis on applications to computer science. Coursework was completed using an online "Zybook", an interactive digital textbook platform designed for STEM courses. Quizzes, assignments, and exams were all completed in-person, on paper— so I no longer have access to my submissions of them.
 
-Completed in Fall of 2021.
+Completed in Fall of 2021 at the University of Pittsburgh, Johnstown campus.
 
-## Files and their contents
+## Directory
 
 [Assignments/](Assignments) - Homework assignments completed for the course  
   &nbsp;&nbsp;– [MATH401_HW1.pdf](Assignments/MATH401_HW1.pdf)  

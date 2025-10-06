@@ -1,0 +1,193 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!-- part 1/2 : Headings and Paragraphs  -->
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+
+        <p>
+            Paragraph text <br>
+            Erm What the Sigma
+        </p>
+
+        <br><br>
+        <!-- part 3: Images and Links -->
+
+        <img src="https://i.ytimg.com/vi/g_JH7i18Sns/mqdefault.jpg" alt="" width="100" height="100">
+
+        <a href="https://www.youtube.com"><img src="https://i.ytimg.com/vi/g_JH7i18Sns/mqdefault.jpg" alt=""></a>
+
+        <br><br>
+        <!-- part 4: ordered and unordered lists -->
+
+        <ul>
+            <li>eggs</li>
+            <li>pasta</li>
+            <li>eggs</li>
+        </ul>
+
+        <ol>
+            <li>eggs</li>
+            <li>pasta</li>
+            <li>eggs</li>
+        </ol>
+
+        <br><br>
+        <!-- part 5: navigation bar with unordered lists   -->
+
+        <h3>Navigation Bar #1</h3>
+        <ul style="list-style-type: none; float:left;">
+            <li style="margin:20px; float: left;"> <a href="https://www.youtube.com"> YouTube</a> </li>
+            <li style="margin:20px;float: left;"> Home</li>
+            <li style="margin:20px;float: left;">Contact Us</li>
+        </ul>
+
+        <br><br>
+        <!-- part 6: navigation bar with icons  -->
+
+        <h3>Navigation Bar #2</h3>
+        <ul style="list-style-type: none; float:left;">
+            <li style="margin:20px; float: left;"> <a href="https://www.youtube.com"><img src="images/Main_area/image_01.png" alt="image1"></a></li>
+            <li style="margin:20px;float: left;"><img src="images/Main_area/image_02.png" alt="image2"></li>
+            <li style="margin:20px;float: left;"><img src="images/Main_area/image_03.png" alt="image3"></li>
+        </ul>
+
+        <br><br>
+
+        <!-- part 7: Tables  -->
+
+        <table style="clear:both; border:1px solid black;" >
+            <!-- row1, headings-->
+            <tr>
+                <th style="border:1px solid black;"> Company </th>
+                <th style="border:1px solid black;"> Contact </th>
+                <th style="border:1px solid black;"> Country </th>
+            </tr>
+            
+            <!-- row2, data -->
+            <tr>
+                <td style="border:1px solid black;"> Alfreds Futterkiste </td>
+                <td style="border:1px solid black;"> Maria Anders </td>
+                <td style="border:1px solid black;"> Germany </td>
+            </tr>
+
+            <!-- row3, data -->
+            <tr>
+                <td style="border:1px solid black;"> Centro Comercial Moctezuma</td>
+                <td style="border:1px solid black;"> Francisco Chang</td>
+                <td style="border:1px solid black;"> Mexico </td>
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <!-- part 8: Forms and Text Inputs  -->
+
+        <form action="">
+            <h4>Fill this form</h4>
+            <label for="username">Username: </label>
+            <input id="username" name = "username" type="text">
+            <br>
+
+            <label for="password">Password: </label>
+            <input id="password" type="password" name = "password">
+            <br>
+
+            <label for="email">Email: </label>
+            <input id="email" type="email" name = "email">
+            <br>
+
+            <input type="submit">
+        </form>
+
+        <br><br>
+
+        <!-- part 9 more forms + radio buttons -->
+
+        <form action="">
+            <h4>Veteran Status</h4>
+
+            <input type="radio" id="veteran" name="veteran_group" value="Veteran">
+            <label for="veteran">Veteran</label>
+            <br>
+
+            <input type="radio" id="non-veteran" name="veteran_group" value="Non-Veteran">
+            <label for="non-veteran">Non-Verteran</label>
+            <br><br>
+
+            <h4>Marital Status</h4>
+
+            <input type="radio" id="married" name="marital_group" value="Married">
+            <label for="married">Married</label>
+            <br>
+
+            <input type="radio" id="Single" name="marital_group" value="Single">
+            <label for="single">Single</label>
+            <br>
+
+            <input type="radio" id="widow" name="marital_group" value="Widow">
+            <label for="widow">Widow</label>
+            <br><br>
+
+            <input type="submit">
+        
+
+            <br><br>
+
+            <!-- part 10: Forms and Checkboxes -->
+
+            <h3>Select the fruits that you like the most</h3>
+
+            <input type="checkbox" id="banana" name="banana" value="banana">
+            <label for="banana"> Banana </label>
+            <br>
+
+            <input type="checkbox" id="apple" name="apple" value="apple">
+            <label for="apple"> Apple </label>
+            <br>
+
+
+            <input type="checkbox" id="watermelon" name="watermelon" value="watermelon">
+            <label for="watermelon"> Watermelon </label>    
+
+            <br><br>
+
+            <!-- part 11: Forms and Dropdown Lists -->
+
+            <h3>Choose a car:</h3>
+            <select name="cars" id="cars">
+
+                <option value="volvo"> Volvo </option>
+                <option value="saab"> Saab </option>
+                <option value="bmw"> BMW </option>
+                <option value="audi"> Audi </option>
+
+            </select>
+
+            <br><br>
+            <input type="submit">
+
+        </form>
+        <br><br>
+
+        <!-- part 12: DIV tags -->
+
+        <div style="border: 1px solid black; clear:both; background-color:aqua; float:left; padding: 5px; width:280px">
+            <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-jpg-file-document-icon-png-image_897364.jpg" style="float:left;" alt="" width="64" height="64">
+            <div style="float:left;">
+                <h4 style="margin: 0px 5px"> Pitt Email</h4>
+                <p style="margin: 0px 5px"> Outlook (all campuses)</p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
