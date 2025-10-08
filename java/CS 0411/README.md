@@ -1,6 +1,6 @@
 # CS 0411 - Intro to Computer Science Programming
 
-This course is an introduction to the core concepts, techniques, and tools of computer science, emphasizing problem analysis, algorithm development, and top-down program design. The course uses Java as its primary programming language. Excercise sets, quizzes, and exams were completed in class, on paper, so I no longer have access to my copies.
+This course is an introduction to the core concepts, techniques, and tools of computer science, emphasizing problem analysis, algorithm development, and top-down program design. The course uses Java as its primary programming language. Exercise sets, quizzes, and exams were completed in class, on paper, so I no longer have access to my copies.
 
 CS 0411 must be taken in tandem with the lab course, CS 0410. The lab is where hands-on coding work was completed, including 13 assignments covering core Java concepts. Seperate exams were also given for the Lab session.
 
@@ -8,13 +8,14 @@ Completed in Spring Term 2021-2022 at the University of Pittsburgh, Johnstown ca
 
 ## Directory
 
-[Excercies/](Excercies) – Problem sets completed during lectures  
-  - [CS0411_Excercies1.pdf](Excercies/CS0411_Excercies1.pdf) – Covers Java primitive types, type promotion and demotion, explicit casting, and operator precedence using hands-on code analysis and small exercises.
-- [CS0411_Excercies2.pdf](Excercies/CS0411_Excercies2.pdf) – Introduces decision-making with `if` statements, practical examples on pay and pricing logic, tip calculation, and calculating averages.
-- [CS0411_Excercies3.pdf](Excercies/CS0411_Excercies3.pdf) – Explores looping constructs such as `while` and `do-while`, grade counting, generating sequences, and user-driven input validation and counting.
-- [CS0411_Excercies4.pdf](Excercies/CS0411_Excercies4.pdf) – Practices writing and analyzing `for` loops, including generating tables, summing series, and predicting loop output with trace tables.
-- [CS0411_Excercies5.pdf](Excercies/CS0411_Excercies5.pdf) – Focuses on writing methods and functions for geometric calculations, summing integers, working with strings and characters, randomization, and primality checking.
-- [CS0411_Excercies6.pdf](Excercies/CS0411_Excercies6.pdf) – Works with arrays: compares equality, concatenates arrays, identifies smallest values, shifts elements, and builds filtered arrays with iteration.
+[In-class Exercises/](In-class%20Exercises) – Problem sets completed during lectures  
+  - [CS0411_Exercises1.pdf](In-class%20Exercises/CS0411_Exercises1.pdf) – Covers Java primitive types, type promotion and demotion, explicit casting, and operator precedence using hands-on code analysis and small exercises.
+  - [CS0411_Exercises2.pdf](In-class%20Exercises/CS0411_Exercises2.pdf) – Introduces decision-making with `if` statements, practical examples on pay and pricing logic, tip calculation, and calculating averages.
+  - [CS0411_Exercises3.pdf](In-class%20Exercises/CS0411_Exercises3.pdf) – Explores looping constructs such as `while` and `do-while`, grade counting, generating sequences, and user-driven input validation and counting.
+  - [CS0411_Exercises4.pdf](In-class%20Exercises/CS0411_Exercises4.pdf) – Practices writing and analyzing `for` loops, including generating tables, summing series, and predicting loop output with trace tables.
+  - [CS0411_Exercises5.pdf](In-class%20Exercises/CS0411_Exercises5.pdf) – Focuses on writing methods and functions for geometric calculations, summing integers, working with strings and characters, randomization, and primality checking.
+  - [CS0411_Exercises6.pdf](In-class%20Exercises/CS0411_Exercises6.pdf) – Works with arrays: compares equality, concatenates arrays, identifies smallest values, shifts elements, and builds filtered arrays with iteration.
+
 
 
 [Lab (CS 0410)/Assignments/](Lab%20(CS%200410)/Assignments) – Coding assignments for the lab course component  
